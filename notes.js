@@ -47,7 +47,7 @@ function main() {
     }
     case "count": {
       const notes = store.all();
-      console.log(`You have ${notes.length} notes.`);
+      console.log(`You have ${notes.length} note${notes.length === 1 ? "" : "s"}.`);
       break;
     }
     default:
